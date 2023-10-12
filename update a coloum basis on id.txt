@@ -1,0 +1,22 @@
+UPDATE V2_Route_Master
+SET RouteColor = 
+    CASE Metro_ID
+        WHEN 1 THEN '#C7F2FE'  
+        WHEN 2 THEN '#34BFC2' 
+		WHEN 3 THEN '#366C3A'  
+		WHEN 4 THEN '#034594' 
+		WHEN 5 THEN '#79236A'  
+		WHEN 6 THEN '#11507A' 
+		WHEN 7 THEN '#4C62B8' 
+		WHEN 8 THEN '#222222'  
+		WHEN 9 THEN '#3271B8'  
+		WHEN 10 THEN '#850D04'  
+		WHEN 11 THEN '#2298AE'  
+		WHEN 12 THEN '#0D0C41'  
+		WHEN 13 THEN '#FB8B32'  
+		WHEN 14 THEN '#34BFC2'  
+		WHEN 15 THEN '#FFFFFF'  
+		
+      
+        ELSE RouteColor  
+    END;
